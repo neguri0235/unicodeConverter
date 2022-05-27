@@ -3,29 +3,35 @@
    <head>
       <title>unicode</title>
       <meta charset="UTF-8">
-    <style>
-        .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        font-family: "Lucida Console", "Courier New", monospace;
-        }
-        .p3 {
-        font-family: "Lucida Console", "Courier New", monospace;
-        }        
-    </style>
-    </head>
-      <h2 class="p3">한글로</h2>
-      <input type="text" class="p3" style="font-size: 12pt;" id="unicode"/><br>
-      <script src="popup.js"></script>
-      <p id="result" style="font-size:16px";></p>
-      <br><br><br>
+      <style>
+         body {
+         font-family: "맑은 고딕", 돋움,굴림;
+         text-align: center;
+         background-color: rgb(235, 224, 209);
+         }
+         h2{
+         font-size: 16px;
+         letter-spacing: 0.2em;
+         width: 100%;
+         height: 40px;
+         background: #222;
+         color: rgb(255,255,255);
+         line-height: 40px;
+         }
+         p {
+         font-weight: bold;
+         font-size: 130%;
+         letter-spacing: 0.2em;         
+         }
+         .p3 {
+         font-size: 100%;
+         }
+      </style>
+   </head>
+   <h2>한글로</h2>
+   <input type="text" class="p3" id="unicode" autofocus placeholder="유니코드를 입력하세요"><br>
+   <script src="popup.js"></script>
+   <p id="result"></p>
+   <br><br><br>
    </body>
 </html>
