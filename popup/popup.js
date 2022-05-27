@@ -8,17 +8,7 @@ function replaceAll(strTemp, strValue1, strValue2) {
             }
             return strTemp;
 }
-        
-function unicodeToKor() {
-            var str = document.getElementById("unicode").value;
-
-            document.getElementById("result").innerHTML = replaceAll(
-                unescape(replaceAll(str, "\\", "%")),
-                "%",
-                ""
-            );
-}
-
+      
 const sendMessageId = document.getElementById('unicode');
 
 if (sendMessageId) {
